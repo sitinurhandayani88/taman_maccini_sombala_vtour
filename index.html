@@ -29,43 +29,53 @@
   <script>
     pannellum.viewer("panorama", {
       "default": {
-        "firstScene": "entrance",
+        "firstScene": "gerbang_maccini_sombala",
         "sceneFadeDuration": 700,
         "autoLoad": true,
         "hfov": 110,
         "escapeHTML": true
       },
       "scenes": {
-        "entrance": {
-          "title": "Campus Entrance",
+        "gerbang_maccini_sombala": {
+          "title": "Gerbang Maccini Sombala",
           "type": "equirectangular",
-          "panorama": "images/entrance.jpg",
+          "panorama": "images/gerbang_utama.jpg",
           "yaw": 0,
           "hotSpots": [
-            {"pitch": -5, "yaw": 14, "type": "scene", "text": "Go to Classroom", "sceneId": "classroom"},
-            {"pitch": 10, "yaw": -50, "type": "info", "text": "Welcome to our virtual campus tour!"}
+            {"pitch": -4, "yaw": -73, "type": "scene", "text": "Ke Pola Lantai Plaza", "sceneId": "pola_lantai_plaza"},
+            {"pitch": 10, "yaw": -50, "type": "info", "text": "Selamat datang di Gerbang Maccini Sombala!"}
           ]
         },
-        "classroom": {
-          "title": "Classroom",
+        "pola_lantai_plaza": {
+          "title": "Pola Lantai Plaza",
           "type": "equirectangular",
-          "panorama": "images/classroom.jpg",
+          "panorama": "images/pola_lantai_plaza.jpg",
           "yaw": 0,
           "hotSpots": [
-            {"pitch": -6, "yaw": 30, "type": "scene", "text": "Go to Library", "sceneId": "library"},
-            {"pitch": -6, "yaw": -110, "type": "scene", "text": "Back to Entrance", "sceneId": "entrance"},
-            {"pitch": 8, "yaw": 3, "type": "info", "text": "Students learn and work together here."}
+            {"pitch": -5, "yaw": 90, "type": "scene", "text": "Ke Gerbang Maccini Sombala", "sceneId": "gerbang_maccini_sombala"},
+            {"pitch": -5, "yaw": -30, "type": "scene", "text": "Ke Dermaga", "sceneId": "gazebo_dan_dermaga"},
+            {"pitch": 5, "yaw": 0, "type": "info", "text": "Area plaza terbuka dengan pola lantai yang khas."}
           ]
         },
-        "library": {
-          "title": "Library",
+        "gazebo_dan_dermaga": {
+          "title": "Dermaga",
           "type": "equirectangular",
-          "panorama": "images/library.jpg",
+          "panorama": "images/gazebo_dan_dermaga.jpg",
           "yaw": 0,
           "hotSpots": [
-            {"pitch": -7, "yaw": -36, "type": "scene", "text": "Back to Classroom", "sceneId": "classroom"},
-            {"pitch": -7, "yaw": 100, "type": "scene", "text": "Return to Entrance", "sceneId": "entrance"},
-            {"pitch": 9, "yaw": 5, "type": "info", "text": "Study resources and reading spaces."}
+            {"pitch": -6, "yaw": 175, "type": "scene", "text": "Ke Pola Lantai Plaza", "sceneId": "pola_lantai_plaza"},
+            {"pitch": -4, "yaw": -28, "type": "scene", "text": "Ke Jembatan Lengkung", "sceneId": "jembatan_lengkung_dan_kanal"},
+            {"pitch": 5, "yaw": 5, "type": "info", "text": "Area dermaga dan gazebo bersantai."}
+          ]
+        },
+        "jembatan_lengkung_dan_kanal": {
+          "title": "Jembatan Lengkung dan Kanal",
+          "type": "equirectangular",
+          "panorama": "images/jembatan_lengkung_dan_kanal.jpg",
+          "yaw": 0,
+          "hotSpots": [
+            {"pitch": -4, "yaw": -155, "type": "scene", "text": "Ke Dermaga", "sceneId": "gazebo_dan_dermaga"},
+            {"pitch": 6, "yaw": 10, "type": "info", "text": "Pemandangan jembatan melengkung dan kanal air."}
           ]
         }
       }
